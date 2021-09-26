@@ -1,5 +1,5 @@
 # Programma website van FDND
-Herontwerp en verbeter de Programma website van FDND
+Herontwerp en verbeter de Programma website van FDND.
 
 ## Context
 Deze leertaak hoort bij sprint **The Client**. Dit is een **autonomous** leertaak die je individueel uitvoert voor FDND.
