@@ -7,7 +7,8 @@ Deze leertaak hoort bij sprint **The Client**. Dit is een **autonomous** leertaa
 ## Briefing
 FDND.nl maakt gebruik van verschillende microsites zoals contact, studieinformatie, programma, SKC, partners en leertaken. 
 
-Een microsite is een deel van een grote site, bedoeld om informatie over een specifiek product of specifieke dienst onder de aandacht te brengen. Zie ook [wat is een microsite](https://webblog2punt0.weebly.com/blog/weet-jij-wat-de-voordelen-zijn-van-het-gebruik-van-microsites)
+Microsites zijn kleine websites ter ondersteuning van een campagne, informatie over een product, dienst of voor een ander specifiek doel.
+Zie ook [wat is een microsite](https://webblog2punt0.weebly.com/blog/weet-jij-wat-de-voordelen-zijn-van-het-gebruik-van-microsites)
 
 Voor het programma van FDND is een aparte microsite gerealiseerd; [programma.fdnd.nl](https://programma.fdnd.nl/).  
 De microsite bevat nog niet alle gewenste content en daarnaast is de presentatie van de content niet erg overzichtelijk. Het is de bedoeling dat de bezoeker per sprint meer relevante informatie kan bekijken en dat de sprints overzichtelijker worden weergegeven.
