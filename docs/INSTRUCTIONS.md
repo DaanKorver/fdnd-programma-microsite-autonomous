@@ -7,8 +7,8 @@ Deze leertaak hoort bij sprint **The Client**. Dit is een **autonomous** leertaa
 ## Briefing
 FDND, ofwel Frontend Design & Development, is een HBO frontend opleiding op Associate Degree niveau.
 
-Voor het programma van FDND is een aparte website gerealiseerd; [programma.fdnd.nl](https://programma.fdnd.nl/).  
-De website bevat nog niet alle gewenste content en daarnaast is de presentatie van de content niet erg overzichtelijk. Het is de bedoeling dat de bezoeker per sprint meer relevante informatie kan bekijken en dat de sprints overzichtelijker worden weergegeven.
+Voor het programma van FDND is een aparte microsite gerealiseerd; [programma.fdnd.nl](https://programma.fdnd.nl/).  
+De microsite bevat nog niet alle gewenste content en daarnaast is de presentatie van de content niet erg overzichtelijk. Het is de bedoeling dat de bezoeker per sprint meer relevante informatie kan bekijken en dat de sprints overzichtelijker worden weergegeven.
 
 Ontwikkel een mockup waarin je de nieuwe Programma website laat zien.
 
