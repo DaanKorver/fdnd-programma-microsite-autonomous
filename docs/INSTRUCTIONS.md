@@ -5,12 +5,14 @@ Herontwerp en verbeter de Programma website van FDND.
 Deze leertaak hoort bij sprint **The Client**. Dit is een **autonomous** leertaak die je individueel uitvoert voor FDND.
 
 ## Briefing
-FDND, ofwel Frontend Design & Development, is een HBO frontend opleiding op Associate Degree niveau.
+FDND.nl maakt gebruik van verschillende microsites zoals contact, studieinformatie, programma, SKC, partners en leertaken. 
+
+Een microsite is een deel van een grote site, bedoeld om informatie over een specifiek product of specifieke dienst onder de aandacht te brengen. Zie ook [wat is een microsite](https://webblog2punt0.weebly.com/blog/weet-jij-wat-de-voordelen-zijn-van-het-gebruik-van-microsites)
 
 Voor het programma van FDND is een aparte microsite gerealiseerd; [programma.fdnd.nl](https://programma.fdnd.nl/).  
 De microsite bevat nog niet alle gewenste content en daarnaast is de presentatie van de content niet erg overzichtelijk. Het is de bedoeling dat de bezoeker per sprint meer relevante informatie kan bekijken en dat de sprints overzichtelijker worden weergegeven.
 
-Ontwikkel een mockup waarin je de nieuwe Programma website laat zien.
+Ontwikkel een mockup waarin je de nieuwe Programma microsite laat zien.
 
 ## Doel van deze opdracht
 Ontwerp en maak een opdracht voor een bedrijf en presenteer het resultaat
