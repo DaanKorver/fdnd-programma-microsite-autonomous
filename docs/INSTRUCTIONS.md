@@ -13,7 +13,7 @@ Zie ook [wat is een microsite](https://webblog2punt0.weebly.com/blog/weet-jij-wa
 Voor het programma van FDND is een aparte microsite gerealiseerd; [programma.fdnd.nl](https://programma.fdnd.nl/).  
 De microsite bevat nog niet alle gewenste content en daarnaast is de presentatie van de content niet erg overzichtelijk. Het is de bedoeling dat de bezoeker per sprint meer relevante informatie (o.a. inhoud van sprints, opdrachten showcasen per sprint) kan bekijken en dat de sprints overzichtelijker worden weergegeven.
 
-Ontwikkel een mockup waarin je de nieuwe Programma microsite laat zien.
+Ontwikkel een mockup waarin je de nieuwe Programma microsite laat zien. De website moet responsive zijn.
 
 ## Doel van deze opdracht
 Ontwerp en maak een opdracht voor een bedrijf en presenteer het resultaat
