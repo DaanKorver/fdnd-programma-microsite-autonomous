@@ -11,7 +11,7 @@ Microsites zijn kleine websites ter ondersteuning van een campagne, informatie o
 Zie ook [wat is een microsite](https://webblog2punt0.weebly.com/blog/weet-jij-wat-de-voordelen-zijn-van-het-gebruik-van-microsites)
 
 Voor het programma van FDND is een aparte microsite gerealiseerd; [programma.fdnd.nl](https://programma.fdnd.nl/).  
-De microsite bevat nog niet alle gewenste content en daarnaast is de presentatie van de content niet erg overzichtelijk. Het is de bedoeling dat de bezoeker per sprint meer relevante informatie kan bekijken en dat de sprints overzichtelijker worden weergegeven.
+De microsite bevat nog niet alle gewenste content en daarnaast is de presentatie van de content niet erg overzichtelijk. Het is de bedoeling dat de bezoeker per sprint meer relevante informatie (o.a. inhoud van sprints, opdrachten showcasen per sprint) kan bekijken en dat de sprints overzichtelijker worden weergegeven.
 
 Ontwikkel een mockup waarin je de nieuwe Programma microsite laat zien.
 
