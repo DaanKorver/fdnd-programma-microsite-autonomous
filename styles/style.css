@@ -10,6 +10,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+/* HOME / HERO SECTION */
+
 .home {
     height: 70vh;
     position: relative;
@@ -43,6 +45,18 @@ body {
     text-transform: lowercase;
 }
 
+.home abbr::before {
+    /* content: '';
+    position: absolute;
+    background-color: transparent;
+    width: .5rem;
+    height: calc(2 * .5rem);
+    top: 0;
+    right: calc(-1 * .5rem);
+    box-shadow: 0 calc(-1 * .5rem 0 0 #050542); */
+
+}
+
 .home>.title {
     display: block;
     position: absolute;
@@ -55,4 +69,55 @@ body {
     font-size: calc(1.5rem + 1.5vw);
     line-height: calc(1.5rem + 1.5vw);
     text-decoration: none;
+}
+
+.home>.title:before {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    width: .5rem;
+    height: calc(2 * .5rem);
+    border-bottom-right-radius: .5rem;
+    top: calc(-2 * .5rem);
+    right: 0;
+    box-shadow: 0 .5rem 0 0 #050542;
+}
+
+.home>.title:after {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    width: .5rem;
+    height: calc(2 * .5rem);
+    border-bottom-right-radius: .5rem;
+    left: calc(-1 * .5rem);
+    bottom: 0;
+    box-shadow: 0 .5rem 0 0 #050542;
+}
+
+/* OPDRACHTEN / LEERTAKEN */
+
+main>section {
+    margin: 4rem 2rem;
+    padding: 2rem;
+    background-color: #66e5bf;
+    color: #050542;
+    border-radius: .5rem;
+}
+
+main>section>h2:first-child {
+    margin: -2rem 0 2rem -2rem;
+    padding: 0 1rem 1rem 2rem;
+    position: relative;
+    width: fit-content;
+    font-size: calc(1.5rem + 1.5vw);
+    color: #fff;
+    background: #050542;
+    border-bottom-right-radius: .5rem;
+    z-index: 2;
+}
+
+.opdrachten-leertaken p:first-child {
+    margin: 1rem 0;
+    font-size: 1.4rem;
 }
