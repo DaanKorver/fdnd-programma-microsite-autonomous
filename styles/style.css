@@ -9,3 +9,50 @@ body {
     color: #ffff;
     font-family: 'Open Sans', sans-serif;
 }
+
+#home {
+    height: 70vh;
+    position: relative;
+    margin: 2rem;
+    background-image: url(../assets/hero-image.jpeg);
+    background-size: cover;
+    background-position: center 10%;
+    border-radius: .5rem;
+}
+
+#home abbr {
+    position: absolute;
+    padding: 0 1rem calc(1rem + .3rem) .3rem;
+    top: 0;
+    left: 0;
+    width: fit-content;
+    background: #050542;
+    text-decoration: none;
+    border-bottom-right-radius: .5rem;
+}
+
+#home abbr span {
+    display: block;
+    padding: .5rem 1.2rem;
+    border: 1px solid #66e5bf;
+    border-radius: 2rem;
+    border-radius: .5rem;
+    box-shadow: calc(-1 * .3rem) .3rem 0 0 #66e5bf;
+    color: #66e5bf;
+    font-size: 2.5rem;
+    text-transform: lowercase;
+}
+
+#home > .title {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem 2rem 0 2rem;
+    background: #050542;
+    border-top-left-radius: 2rem;
+    color: #a675f5;
+    font-size: calc(1.5rem + 1.5vw);
+    line-height: calc(1.5rem + 1.5vw);
+    text-decoration: none;
+}
