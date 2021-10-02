@@ -194,8 +194,8 @@ main>section>h2:first-child::after {
 }
 
 .flex-container img {
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 100%;
+    max-height: 100%;
     border-radius: var(--rounded);
 }
 
@@ -211,5 +211,10 @@ main>section>h2:first-child::after {
 
     .flex-container {
         flex-direction: row;
+    }
+
+    .flex-container img {
+        max-width: 90%;
+        max-height: 90%;
     }
 }
