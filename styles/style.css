@@ -58,9 +58,9 @@ header {
   }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 374px) {
   .fdnd {
-    font-size: 0.875rem;
+    font-size: 0.800rem;
   }
 
   .logo {
