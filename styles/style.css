@@ -16,19 +16,19 @@ header {
   justify-content: flex-start;
   align-items: center;
 
-  margin-top: -18px;
+  margin-top: -1.125rem;
   margin-left: 0.3em;
 }
 
 .logo {
   width: 200px;
   height: 150px;
-  margin: 0 30px;
+  margin: 0 1.8em;
 }
 
 .fdnd {
   border-left: 1px solid #fff;
-  padding-left: 15px;
+  padding-left: 1em;
 }
 
 /* Media Querie Mobile */
@@ -41,7 +41,7 @@ header {
     .logo {
         width: 130px;
         height: 110px;
-        margin: 0 15px;
+        margin: 0 1em;
     }
 }
 
@@ -53,6 +53,6 @@ header {
     .logo {
         width: 170px;
         height: 130px;
-        margin: 0 15px;
+        margin: 0 1em;
     }
 }
