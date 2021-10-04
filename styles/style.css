@@ -123,11 +123,17 @@ body {
 /* OPDRACHTEN / LEERTAKEN */
 
 main>section {
-    margin: 4rem 1rem;
     padding: 2rem;
     background-color: var(--turquoise);
-    color: #050542;
     border-radius: var(--rounded);
+    background-image: url('../assets/hackaton-image.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+main>section:first-child {
+    height: 350px;
+    margin: 1rem;
 }
 
 main>section>h2:first-child {
@@ -166,55 +172,29 @@ main>section>h2:first-child::after {
     border-top-left-radius: var(--rounded);
 }
 
-.opdrachten-leertaken p:first-child {
-    margin: 1rem 0;
-    font-size: 1.2rem;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-}
-
-.flex-container .text-container {
-    flex: 1;
-}
-
-.opdrachten-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.flex-container .opdrachten-image {
-    flex: 1;
-}
-
-.flex-container img {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: var(--rounded);
+.opdrachten-leertaken-text {
+    padding: 0 1em;
+    font-size: 1rem;
 }
 
 @media(min-width: 50em) {
 
-    .home {
+    .home,
+    main>section:first-child  {
+        margin: 2em 4em;
+    }
+
+    main>section:first-child  {
+        margin-top: 4em;
+    }
+
+    .opdrachten-leertaken-text {
         margin: 2em;
+        max-width: 40em;
+        font-size: 1.3rem;
     }
 
     main>section {
         margin: 4em 2em;
-    }
-
-    .flex-container {
-        flex-direction: row;
-    }
-
-    .flex-container img {
-        max-width: 90%;
-        max-height: 90%;
     }
 }
