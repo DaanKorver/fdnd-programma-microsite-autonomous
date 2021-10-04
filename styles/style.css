@@ -44,6 +44,18 @@ header {
   padding-left: 1em;
 }
 
+/* COMPONENTS */
+
+button {
+  all: unset;
+  cursor: pointer;
+  border: 4px solid var(--blueberry);
+  border-radius: 2em;
+  color: var(--blueberry);
+  font-weight: 500;
+  padding: 0.5em 2em;
+}
+
 /* Media Querie Mobile */
 
 @media (min-width: 280px) {
@@ -73,175 +85,226 @@ header {
 /* HOME / HERO SECTION */
 
 .home {
-    height: 70vh;
-    position: relative;
-    margin: 1rem;
-    background-image: url(../assets/hero-image.jpeg);
-    background-size: cover;
-    background-position: center 10%;
-    border-radius: var(--pilled);
+  height: 70vh;
+  position: relative;
+  margin: 1rem;
+  background-image: url(../assets/hero-image.jpeg);
+  background-size: cover;
+  background-position: center 10%;
+  border-radius: var(--pilled);
 }
 
 .home abbr {
-    position: absolute;
-    padding: 0 1rem calc(1rem + var(--shadow)) var(--shadow);
-    top: 0;
-    left: 0;
-    width: fit-content;
-    background: #050542;
-    text-decoration: none;
-    border-bottom-right-radius: var(--pilled);
+  position: absolute;
+  padding: 0 1rem calc(1rem + var(--shadow)) var(--shadow);
+  top: 0;
+  left: 0;
+  width: fit-content;
+  background: #050542;
+  text-decoration: none;
+  border-bottom-right-radius: var(--pilled);
 }
 
 .home abbr div {
-    display: block;
-    padding: .5rem 1.2rem;
-    border: 1px solid var(--turquoise);
-    border-radius: var(--pilled);
-    border-radius: var(--rounded);
-    box-shadow: calc(-1 * var(--shadow)) var(--shadow) 0 0 var(--turquoise);
-    color: #66e5bf;
-    font-size: 2.5rem;
-    text-transform: lowercase;
+  display: block;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--turquoise);
+  border-radius: var(--pilled);
+  border-radius: var(--rounded);
+  box-shadow: calc(-1 * var(--shadow)) var(--shadow) 0 0 var(--turquoise);
+  color: #66e5bf;
+  font-size: 2.5rem;
+  text-transform: lowercase;
 }
 
 .home abbr::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: calc(-1 * var(--rounded));
-    box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
-    background-color: transparent;
-    width: var(--rounded);
-    height: calc(2 * var(--rounded));
-    border-top-left-radius: var(--rounded);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: calc(-1 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-left-radius: var(--rounded);
 }
 
 .home abbr::after {
-    left: 0;
-    bottom: calc(-2 * var(--rounded));
-    box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
-    content: '';
-    position: absolute;
-    background-color: transparent;
-    width: var(--rounded);
-    height: calc(2 * var(--rounded));
-    border-top-left-radius: var(--rounded);
+  left: 0;
+  bottom: calc(-2 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-left-radius: var(--rounded);
 }
 
-.home>.title {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 1rem 2rem 0 2rem;
-    background: #050542;
-    border-top-left-radius: 2rem;
-    color: #a675f5;
-    font-size: calc(1.5rem + 1.5vw);
-    line-height: calc(1.5rem + 1.5vw);
-    text-decoration: none;
+.home > .title {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem 2rem 0 2rem;
+  background: #050542;
+  border-top-left-radius: 2rem;
+  color: #a675f5;
+  font-size: calc(1.5rem + 1.5vw);
+  line-height: calc(1.5rem + 1.5vw);
+  text-decoration: none;
 }
 
-.home>.title:before {
-    content: '';
-    position: absolute;
-    background-color: transparent;
-    width: .5rem;
-    height: calc(2 * var(--rounded));
-    border-bottom-right-radius: var(--rounded);
-    top: calc(-2 * var(--rounded));
-    right: 0;
-    box-shadow: 0 var(--rounded) 0 0 #050542;
+.home > .title:before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 0.5rem;
+  height: calc(2 * var(--rounded));
+  border-bottom-right-radius: var(--rounded);
+  top: calc(-2 * var(--rounded));
+  right: 0;
+  box-shadow: 0 var(--rounded) 0 0 #050542;
 }
 
-.home>.title:after {
-    content: '';
-    position: absolute;
-    background-color: transparent;
-    width: .5rem;
-    height: calc(2 * var(--rounded));
-    border-bottom-right-radius: var(--rounded);
-    left: calc(-1 * var(--rounded));
-    bottom: 0;
-    box-shadow: 0 var(--rounded) 0 0 #050542;
+.home > .title:after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: 0.5rem;
+  height: calc(2 * var(--rounded));
+  border-bottom-right-radius: var(--rounded);
+  left: calc(-1 * var(--rounded));
+  bottom: 0;
+  box-shadow: 0 var(--rounded) 0 0 #050542;
+}
+
+/* SEMESTERS & Sprints */
+
+main > section > .semester {
+  margin: 2em;
+  padding: 2em;
+  background-color: var(--turquoise);
+  border-radius: var(--rounded);
+  color: var(--blueberry);
+}
+
+main > section > .semester > h3 {
+  margin: -2rem 0 2rem -2rem;
+  padding: 0 1rem 1rem 2rem;
+  position: relative;
+  width: fit-content;
+  font-size: calc(.7rem + 1.3vw);
+  font-weight: 600;
+  color: #fff;
+  background: #050542;
+  border-bottom-right-radius: var(--rounded);
+  z-index: 2;
+}
+
+main > section > .semester > h3::before {
+  top: 0;
+  right: calc(-1 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-left-radius: var(--rounded);
+}
+
+main > section > .semester > h3::after {
+  left: 0;
+  bottom: calc(-2 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-left-radius: var(--rounded);
+}
+
+section .date {
+  font-style: italic;
+  color: var(--lavender);
 }
 
 /* OPDRACHTEN / LEERTAKEN */
 
-main>section {
-    padding: 2rem;
-    background-color: var(--turquoise);
-    border-radius: var(--rounded);
-    background-image: url('../assets/hackaton-image.jpeg');
-    background-size: cover;
-    background-position: center;
+main > .opdrachten-leertaken {
+  padding: 2rem;
+  background-color: var(--turquoise);
+  border-radius: var(--rounded);
+  background-image: url("../assets/hackaton-image.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
-main>section:first-child {
-    height: 350px;
-    margin: 1rem;
+main > .opdrachten-leertaken {
+  height: 350px;
+  margin: 1rem;
 }
 
-main>section>h2:first-child {
-    margin: -2rem 0 2rem -2rem;
-    padding: 0 1rem 1rem 2rem;
-    position: relative;
-    width: fit-content;
-    font-size: calc(1.3rem + 1.5vw);
-    color: #fff;
-    background: #050542;
-    border-bottom-right-radius: var(--rounded);
-    z-index: 2;
+main > .opdrachten-leertaken > h2 {
+  margin: -2rem 0 2rem -2rem;
+  padding: 0 1rem 1rem 2rem;
+  position: relative;
+  width: fit-content;
+  font-size: calc(1.3rem + 1.5vw);
+  color: #fff;
+  background: #050542;
+  border-bottom-right-radius: var(--rounded);
+  z-index: 2;
 }
 
-main>section>h2:first-child::before {
-    top: 0;
-    right: calc(-1 * var(--rounded));
-    box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
-    content: '';
-    position: absolute;
-    background-color: transparent;
-    width: var(--rounded);
-    height: calc(2 * var(--rounded));
-    border-top-left-radius: var(--rounded);
+main > .opdrachten-leertaken > h2::before {
+  top: 0;
+  right: calc(-1 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-left-radius: var(--rounded);
 }
 
-main>section>h2:first-child::after {
-    left: 0;
-    bottom: calc(-2 * var(--rounded));
-    box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
-    content: '';
-    position: absolute;
-    background-color: transparent;
-    width: var(--rounded);
-    height: calc(2 * var(--rounded));
-    border-top-left-radius: var(--rounded);
+main > .opdrachten-leertaken > h2::after {
+  left: 0;
+  bottom: calc(-2 * var(--rounded));
+  box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  border-top-left-radius: var(--rounded);
 }
 
 .opdrachten-leertaken-text {
-    padding: 0 1em;
-    font-size: 1rem;
+  padding: 0 1em;
+  font-size: 1rem;
 }
 
-@media(min-width: 50em) {
+@media (min-width: 50em) {
+  .home,
+  main > .opdrachten-leertaken {
+    margin: 2em 4em;
+  }
 
-    .home,
-    main>section:first-child  {
-        margin: 2em 4em;
-    }
+  main > section:first-child {
+    margin-top: 4em;
+  }
 
-    main>section:first-child  {
-        margin-top: 4em;
-    }
+  .opdrachten-leertaken-text {
+    margin: 2em;
+    max-width: 40em;
+    font-size: 1.3rem;
+  }
 
-    .opdrachten-leertaken-text {
-        margin: 2em;
-        max-width: 40em;
-        font-size: 1.3rem;
-    }
-
-    main>section {
-        margin: 4em 2em;
-    }
+  main > section {
+    margin: 4em 2em;
+  }
 }
