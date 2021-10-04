@@ -48,7 +48,7 @@ header {
 
 @media (min-width: 280px) {
   .fdnd {
-    font-size: 12.5px;
+    font-size: 0.688rem;
   }
 
   .logo {
@@ -60,7 +60,7 @@ header {
 
 @media (min-width: 375px) {
   .fdnd {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   .logo {
