@@ -35,7 +35,7 @@ header {
 
 @media (min-width: 280px) {
     .fdnd {
-        font-size: 12.5px;
+        font-size: 0.781rem;
     }
 
     .logo {
