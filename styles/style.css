@@ -13,6 +13,12 @@
     --shadow: .3rem;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     box-sizing: border-box;
     padding: 0;
@@ -68,4 +74,103 @@ body {
     font-size: calc(1.5rem + 1.5vw);
     line-height: calc(1.5rem + 1.5vw);
     text-decoration: none;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100%;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 2em 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+    transition: .3s opacity;
+    overflow: auto;
+}
+
+.modal--open {
+    opacity: 1;
+}
+
+.sprint {
+    width: 100%;
+    max-width: 65em;
+    position: relative;
+    margin: 5em 0;
+}
+
+.sprint h2 {
+    color: var(--lavender);
+    font-size: 3rem;
+    background-color: var(--blueberry);
+    display: inline-block;
+    border-radius: 20px 20px 0 0;
+    padding: .2em 1.3em;
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    border-color: var(--lavender);
+    position: relative;
+    z-index: 2;
+    top: 2px;
+}
+
+.sprint__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: var(--blueberry);
+    padding: 4em;
+    border-radius: 0 20px 20px 20px;
+    border: 2px solid var(--lavender)
+}
+
+.sprint__content p {
+    max-width: 25em;
+    font-size: 1.2rem
+}
+
+.sprint__content .carousel {
+    width: 20em;
+    height: 20em;
+    background-color: red;
+}
+
+.modal__close {
+    position: fixed;
+    right: 35px;
+    top: 50px;
+    cursor: pointer;
+}
+
+.modal__close::before {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(-45deg);
+
+}
+
+.modal__close::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    transform: rotate(45deg);
 }
