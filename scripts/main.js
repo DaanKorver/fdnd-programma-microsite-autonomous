@@ -26,19 +26,26 @@ function getSprints(semester) {
 
 // Fill content
 const semester1 = getSprints(0)
-console.log(semester1);
 
 semester1.forEach(sprint=>{
   modal.innerHTML += 
 `
 <section class="sprint">
-<h2>Sprint ${sprint.sprint} - ${sprint.naam}</h2>
-<section class="sprint__content">
-    <p>${sprint.beschrijving}</p>
-    <div class="carousel">
-
-    </div>
-</section>
+  <h2>Sprint ${sprint.sprint} - <span>${sprint.naam}</span></h2>
+  <section class="sprint__content">
+      <div>
+        <p>${sprint.beschrijving}</p>
+        <ul>
+          <li><img src="./../assets/link.svg" alt="link"/><a target="_blank" href="${sprint.opdrachten[0].live}">Voorbeeld opdracht 1</a></li>
+          <li><img src="./../assets/link.svg" alt="link"/><a target="_blank" href="${sprint.opdrachten[1].live}">Voorbeeld opdracht 2</a></li>
+          <li><img src="./../assets/link.svg" alt="link"/><a target="_blank" href="${sprint.opdrachten[2].live}">Voorbeeld opdracht 3</a></li>
+        </ul>
+      </div>
+      <div class="sprint__image">
+        <img src="./../assets/vaporwave.png" alt="project"/>
+      </div>
+  </section>
 </section>
 `
 })
+

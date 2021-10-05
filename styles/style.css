@@ -14,9 +14,9 @@
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -109,117 +109,174 @@ header {
   text-transform: lowercase;
 }
 
-.home>.title {
-    display: block;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 1rem 2rem 0 2rem;
-    background: #050542;
-    border-top-left-radius: 2rem;
-    color: #a675f5;
-    font-size: calc(1.5rem + 1.5vw);
-    line-height: calc(1.5rem + 1.5vw);
-    text-decoration: none;
+.home > .title {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem 2rem 0 2rem;
+  background: #050542;
+  border-top-left-radius: 2rem;
+  color: #a675f5;
+  font-size: calc(1.5rem + 1.5vw);
+  line-height: calc(1.5rem + 1.5vw);
+  text-decoration: none;
 }
 
 .modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 10;
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    max-height: 100%;
-    background-color: rgba(0, 0, 0, .6);
-    padding: 2em 10em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    opacity: 0;
-    transition: .3s opacity;
-    overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s opacity;
+  overflow: auto;
 }
 
 .modal--open {
-    opacity: 1;
+  opacity: 1;
 }
 
 .sprint {
-    width: 100%;
-    max-width: 65em;
-    position: relative;
-    margin: 5em 0;
+  width: 90%;
+  max-width: 65em;
+  position: relative;
+  margin: 5em 0;
 }
 
 .sprint h2 {
-    color: var(--lavender);
-    font-size: 3rem;
-    background-color: var(--blueberry);
-    display: inline-block;
-    border-radius: 20px 20px 0 0;
-    padding: .2em 1.3em;
-    border-top: 2px solid;
-    border-right: 2px solid;
-    border-left: 2px solid;
-    border-color: var(--lavender);
-    position: relative;
-    z-index: 2;
-    top: 2px;
+  color: var(--lavender);
+  font-size: 3rem;
+  background-color: var(--blueberry);
+  display: inline-block;
+  border-radius: 20px 20px 0 0;
+  padding: 0.2em 1.3em;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  border-color: var(--lavender);
+  position: relative;
+  z-index: 2;
+  top: 2px;
+}
+
+.sprint h2 > span {
+  white-space: nowrap;
+}
+
+.sprint h2::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: calc(2 * var(--rounded));
+  height: var(--rounded);
+  border-bottom-left-radius: var(--rounded);
+  right: calc(-2 * var(--rounded)); /*-2*/
+  bottom: 0;
+  border-left: 2px solid var(--lavender);
+  border-bottom: 2px solid var(--lavender);
+  box-shadow: 0 calc(1 * var(--rounded)) 0 0 var(--blueberry);
+}
+
+.sprint h2::before {
+  content: "";
+  position: absolute;
+  background-color: var(--blueberry);
+  right: 0;
+  bottom: 0;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  z-index: 2;
 }
 
 .sprint__content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: var(--blueberry);
-    padding: 4em;
-    border-radius: 0 20px 20px 20px;
-    border: 2px solid var(--lavender)
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--blueberry);
+  padding: 4em;
+  border-radius: 0 20px 20px 20px;
+  border: 2px solid var(--lavender);
 }
 
 .sprint__content p {
-    max-width: 25em;
-    font-size: 1.2rem
+  max-width: 25em;
+  font-size: 1.2rem;
 }
 
-.sprint__content .carousel {
-    width: 20em;
-    height: 20em;
-    background-color: red;
+.sprint__content ul {
+  margin-top: 1em;
+}
+
+.sprint__content ul > li {
+  display: flex;
+  align-items: center;
+  margin-bottom: .5em;
+}
+
+.sprint__content ul > li img {
+  width: 24px;
+  margin-right: .5em;
+}
+
+.sprint__content ul > li a:visited {
+  color: inherit;
+}
+
+.sprint__content .sprint__image {
+  width: 20em;
+  height: 20em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.sprint__content .sprint__image img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 100%;
 }
 
 .modal__close {
-    position: fixed;
-    right: 35px;
-    top: 50px;
-    cursor: pointer;
+  position: absolute;
+  right: 35px;
+  top: 50px;
+  cursor: pointer;
+  z-index: 10;
 }
 
 .modal__close::before {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    width: 50px;
-    height: 2px;
-    background-color: #fff;
-    transform: rotate(-45deg);
-
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(-45deg);
 }
 
 .modal__close::after {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    width: 50px;
-    height: 2px;
-    background-color: #fff;
-    transform: rotate(45deg);
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+  transform: rotate(45deg);
 }
 .home > .title {
   display: block;
@@ -233,4 +290,73 @@ header {
   font-size: calc(1.5rem + 1.5vw);
   line-height: calc(1.5rem + 1.5vw);
   text-decoration: none;
+}
+
+@media (max-width: 65em) {
+  .sprint__content {
+    flex-direction: column;
+  }
+
+  .sprint h2 {
+    display: block;
+  }
+
+  .sprint__content {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .sprint__content p {
+    max-width: none;
+    margin-bottom: 1em;
+  }
+
+  .sprint__content .carousel {
+    width: 100%;
+  }
+
+  .sprint h2::after {
+    display: none;
+  }
+
+  .sprint__content .sprint__image {
+    width: 100%;
+    height: auto;
+    border-radius: none;
+  }
+
+  .sprint__content .sprint__image img {
+    width: 100%;
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+}
+
+@media (max-width: 45em) {
+  .sprint__content {
+    padding: 2em;
+  }
+  .sprint h2 {
+    padding: .2em .5em;
+  }
+}
+
+@media (max-width: 35em) {
+
+  .sprint__content {
+    padding: 1em;
+  }
+
+  .sprint h2 {
+    font-size: 2rem;
+    padding: 1em 1em 0 .5em;
+  }
+
+  .sprint h2 > span {
+    display: block;
+  }
+
+  .sprint__content p {
+    font-size: 1rem;
+  }
 }
