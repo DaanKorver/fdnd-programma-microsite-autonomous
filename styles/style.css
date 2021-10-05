@@ -230,6 +230,10 @@ header {
   margin-right: .5em;
 }
 
+.sprint__content ul > li a {
+  color: var(--white);
+}
+
 .sprint__content ul > li a:visited {
   color: inherit;
 }
@@ -264,7 +268,7 @@ header {
   top: 0;
   width: 50px;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--white);
   transform: rotate(-45deg);
 }
 
@@ -275,7 +279,7 @@ header {
   top: 0;
   width: 50px;
   height: 2px;
-  background-color: #fff;
+  background-color: var(--white);;
   transform: rotate(45deg);
 }
 .home > .title {
