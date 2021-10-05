@@ -5,12 +5,31 @@
   --blueberry: #050542;
   --turquoise: #66e5bf;
   --lavender: #a675f5;
+  --lavender-dark: hsl(263, 86%, 60%);
   --attention: #050542;
   --attention-background: #05054233;
   --call-to-action: #fffc86;
   --rounded: 0.5rem;
   --pilled: 2rem;
   --shadow: 0.3rem;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--blueberry);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--lavender);
+  border-radius: var(--rounded);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--lavender-dark);
+  
 }
 
 * {
