@@ -14,6 +14,13 @@
 }
 
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -148,7 +155,7 @@ button:hover {
   border-top-left-radius: var(--rounded);
 }
 
-.home>.title {
+.home > .title {
   display: block;
   position: absolute;
   bottom: 0;
@@ -162,7 +169,7 @@ button:hover {
   text-decoration: none;
 }
 
-.home>.title:before {
+.home > .title:before {
   content: "";
   position: absolute;
   background-color: transparent;
@@ -174,7 +181,7 @@ button:hover {
   box-shadow: 0 var(--rounded) 0 0 var(--blueberry);
 }
 
-.home>.title:after {
+.home > .title:after {
   content: "";
   position: absolute;
   background-color: transparent;
@@ -188,20 +195,20 @@ button:hover {
 
 /* SEMESTERS & Sprints */
 
-main>section>div {
+main > section > div {
   margin: 3em 1em;
 }
 
-main>section>div>h2 {
+main > section > div > h2 {
   margin: 0;
   font-size: calc(1.3rem + 1.5vw);
 }
 
-main>section>div>p {
-  font-size: calc(1rem + .4vw);
+main > section > div > p {
+  font-size: calc(1rem + 0.4vw);
 }
 
-main>section>.semester {
+main > section > .semester {
   margin: 2em 1em;
   padding: 2em;
   background-color: var(--turquoise);
@@ -216,7 +223,7 @@ main>section>.semester {
   align-items: center;
 }
 
-.semester__image>img {
+.semester__image > img {
   border-radius: var(--rounded);
   background-color: var(--lavender);
 
@@ -224,12 +231,12 @@ main>section>.semester {
   max-height: 100%;
 }
 
-main>section>.semester>h3 {
+main > section > .semester > h3 {
   margin: -2rem 0 2rem -2rem;
   padding: 0 1rem 1rem 1rem;
   position: relative;
   width: fit-content;
-  font-size: calc(.7rem + 1.3vw);
+  font-size: calc(0.7rem + 1.3vw);
   font-weight: 600;
   color: var(--white);
   background: #050542;
@@ -237,7 +244,7 @@ main>section>.semester>h3 {
   z-index: 2;
 }
 
-main>section>.semester>h3::before {
+main > section > .semester > h3::before {
   top: 0;
   right: calc(-1 * var(--rounded));
   box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
@@ -249,7 +256,7 @@ main>section>.semester>h3::before {
   border-top-left-radius: var(--rounded);
 }
 
-main>section>.semester>h3::after {
+main > section > .semester > h3::after {
   left: 0;
   bottom: calc(-2 * var(--rounded));
   box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
@@ -271,13 +278,13 @@ section .semester-text {
   padding-bottom: 2em;
 }
 
-main>section>.semester>.flex-container {
+main > section > .semester > .flex-container {
   display: flex;
   flex-direction: column;
 }
 
-section>.flex-container>.semester__text,
-section>.flex-container>.semester__image {
+section > .flex-container > .semester__text,
+section > .flex-container > .semester__image {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -287,7 +294,7 @@ section>.flex-container>.semester__image {
 
 /* OPDRACHTEN / LEERTAKEN */
 
-main>.opdrachten-leertaken {
+main > .opdrachten-leertaken {
   padding: 2rem;
   background-color: var(--turquoise);
   border-radius: var(--rounded);
@@ -296,12 +303,12 @@ main>.opdrachten-leertaken {
   background-position: center;
 }
 
-main>.opdrachten-leertaken {
+main > .opdrachten-leertaken {
   height: 350px;
   margin: 1rem;
 }
 
-main>.opdrachten-leertaken>h2 {
+main > .opdrachten-leertaken > h2 {
   margin: -2rem 0 2rem -2rem;
   padding: 0 1rem 1rem 2rem;
   position: relative;
@@ -313,7 +320,7 @@ main>.opdrachten-leertaken>h2 {
   z-index: 2;
 }
 
-main>.opdrachten-leertaken>h2::before {
+main > .opdrachten-leertaken > h2::before {
   top: 0;
   right: calc(-1 * var(--rounded));
   box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
@@ -325,7 +332,7 @@ main>.opdrachten-leertaken>h2::before {
   border-top-left-radius: var(--rounded);
 }
 
-main>.opdrachten-leertaken>h2::after {
+main > .opdrachten-leertaken > h2::after {
   left: 0;
   bottom: calc(-2 * var(--rounded));
   box-shadow: 0 calc(-1 * var(--rounded)) 0 0 var(--blueberry);
@@ -342,18 +349,241 @@ main>.opdrachten-leertaken>h2::after {
   font-size: 1rem;
 }
 
-@media (min-width: 50em) {
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2em 0;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transition: 0.3s opacity;
+  overflow: auto;
+  display: flex;
+  pointer-events: none;
+}
 
+.modal--open {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.modal__content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sprint {
+  width: 90%;
+  max-width: 65em;
+  position: relative;
+  margin: 5em 0;
+}
+
+.sprint h2 {
+  color: var(--lavender);
+  font-size: 3rem;
+  background-color: var(--blueberry);
+  display: inline-block;
+  border-radius: 20px 20px 0 0;
+  padding: 0.2em 1.3em;
+  border-top: 2px solid;
+  border-right: 2px solid;
+  border-left: 2px solid;
+  border-color: var(--lavender);
+  position: relative;
+  z-index: 2;
+  top: 2px;
+}
+
+.sprint h2 > span {
+  white-space: nowrap;
+}
+
+.sprint h2::after {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  width: calc(2 * var(--rounded));
+  height: var(--rounded);
+  border-bottom-left-radius: var(--rounded);
+  right: calc(-2 * var(--rounded)); /*-2*/
+  bottom: 0;
+  border-left: 2px solid var(--lavender);
+  border-bottom: 2px solid var(--lavender);
+  box-shadow: 0 calc(1 * var(--rounded)) 0 0 var(--blueberry);
+}
+
+.sprint h2::before {
+  content: "";
+  position: absolute;
+  background-color: var(--blueberry);
+  right: 0;
+  bottom: 0;
+  width: var(--rounded);
+  height: calc(2 * var(--rounded));
+  z-index: 2;
+}
+
+.sprint__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: var(--blueberry);
+  padding: 4em;
+  border-radius: 0 20px 20px 20px;
+  border: 2px solid var(--lavender);
+}
+
+.sprint__content p {
+  max-width: 25em;
+  font-size: 1.2rem;
+}
+
+.sprint__content ul {
+  margin-top: 1em;
+}
+
+.sprint__content ul > li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.sprint__content ul > li img {
+  width: 24px;
+  margin-right: 0.5em;
+}
+
+.sprint__content ul > li a {
+  color: var(--white);
+}
+
+.sprint__content ul > li a:visited {
+  color: inherit;
+}
+
+.sprint__content .sprint__image {
+  width: 20em;
+  height: 20em;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.sprint__content .sprint__image img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 100%;
+}
+
+.modal__close {
+  position: absolute;
+  right: 35px;
+  top: 25px;
+  cursor: pointer;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+}
+
+.modal__close::before {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%;
+  width: 50px;
+  height: 2px;
+  background-color: var(--white);
+  transform: rotate(-45deg) translateY(-50%);
+}
+
+.modal__close::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%;
+  width: 50px;
+  height: 2px;
+  background-color: var(--white);
+  transform: rotate(45deg) translateY(-50%);
+}
+.home > .title {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem 2rem 0 2rem;
+  background: #050542;
+  border-top-left-radius: 2rem;
+  color: #a675f5;
+  font-size: calc(1.5rem + 1.5vw);
+  line-height: calc(1.5rem + 1.5vw);
+  text-decoration: none;
+}
+
+@media (max-width: 65em) {
+  .sprint__content {
+    flex-direction: column;
+  }
+
+  .sprint h2 {
+    display: block;
+  }
+
+  .sprint__content {
+    border-radius: 0 0 20px 20px;
+  }
+
+  .sprint__content p {
+    max-width: none;
+    margin-bottom: 1em;
+  }
+
+  .sprint__content .carousel {
+    width: 100%;
+  }
+
+  .sprint h2::after {
+    display: none;
+  }
+
+  .sprint__content .sprint__image {
+    width: 100%;
+    height: auto;
+    border-radius: none;
+  }
+
+  .sprint__content .sprint__image img {
+    width: 100%;
+    position: relative;
+    left: 0;
+    transform: none;
+  }
+}
+
+@media (min-width: 50em) {
   .home,
-  main>.opdrachten-leertaken {
+  main > .opdrachten-leertaken {
     margin: 2em 4em;
   }
 
-  main>section>.semester {
+  main > section > .semester {
     margin: 4em 6em;
   }
 
-  main>section>div {
+  main > section > div {
     margin: 6em;
   }
 
@@ -363,11 +593,39 @@ main>.opdrachten-leertaken>h2::after {
     font-size: 1.3rem;
   }
 
-  main>section>.semester>.flex-container {
+  main > section > .semester > .flex-container {
     flex-direction: row;
   }
 
-  main>section {
+  main > section {
     margin: 4em 2em;
+  }
+}
+
+@media (max-width: 45em) {
+  .sprint__content {
+    padding: 2em;
+  }
+  .sprint h2 {
+    padding: 0.2em 0.5em;
+  }
+}
+
+@media (max-width: 35em) {
+  .sprint__content {
+    padding: 1em;
+  }
+
+  .sprint h2 {
+    font-size: 2rem;
+    padding: 1em 1em 0 0.5em;
+  }
+
+  .sprint h2 > span {
+    display: block;
+  }
+
+  .sprint__content p {
+    font-size: 1rem;
   }
 }
