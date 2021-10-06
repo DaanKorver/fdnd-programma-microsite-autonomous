@@ -51,6 +51,65 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+/* Cta */
+
+nav p {
+  padding-left: 6rem;
+  font-size: 2rem;
+}
+
+nav .nav__bar{
+  display: flex;
+  overflow: auto;
+  padding: 1em 0;
+  align-items: center;
+}
+
+nav .nav__bar::-webkit-scrollbar {
+  height: 3px;
+}
+
+.cta__nav {
+  padding: .5em 2em;
+  border-radius: 2em;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  margin-right: .5rem;
+  text-decoration: none;
+}
+
+.cta__nav:nth-child(even) {
+  background-color: transparent;
+  border: 2px solid var(--turquoise);
+  color: var(--blueberry);
+  background-color: var(--turquoise);
+}
+
+.cta__nav:nth-child(odd) {
+  background-color: var(--lavender);
+  border: 2px solid var(--lavender);
+  color: var(--blueberry);
+}
+
+.nav__divider {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: transparent;
+  border: 2px solid var(--lavender);
+  flex-shrink: 0;
+  margin-right: .5rem;
+  border-radius: 50%;
+}
+
+.nav__semester {
+  white-space: nowrap;
+  border: 2px solid var(--turquoise);
+  color: var(--turquoise);
+  padding: .5em 2em;
+  margin-right: .5rem;
+  font-size: 1.5rem;
+}
+
 /* Logo */
 header {
   display: flex;
@@ -614,10 +673,6 @@ main > .opdrachten-leertaken > h2::after {
 
   main > section > .semester > .flex-container {
     flex-direction: row;
-  }
-
-  main > section {
-    margin: 4em 2em;
   }
 }
 
