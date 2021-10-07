@@ -11,157 +11,686 @@
 </head>
 
 <body>
-    <div class="modal">
-        <div class="modal__close"></div>
-        <div class="modal__content">
-
-        </div>
-    </div>
     <header>
         <img src="/assets/logo.svg" alt="logo" class="logo">
         <p class="fdnd"> Frontend<br>Design & Development</p>
     </header>
     <section class="home">
-        <abbr title="Frontend Design & Development">
+        <span title="Frontend Design & Development">
             <div>FDND</div>
-        </abbr>
-        <div class="title">Programma</div>
+        </span>
+        <div class="title">
+            <div>Programma</div>
+        </div>
     </section>
     <main>
-        <section class="sprints-semesters">
-            <div>
-                <h2>Sprints & Semesters</h2>
-                <p>Het programma van FDND bestaat uit 4 semesters. Semester 1, 2 en 3 bestaan ieder uit 6 sprints. Ieder
-                    sprint heeft een eigen thema, waarin bijpassende opdrachten/leertaken worden aangeboden. Het 4e
-                    semester
-                    bestaat uit een einproject en vrije invulling.
-                </p>
+
+        <section class="sprints-semesters-text-container">
+            <h2>Sprints & Semesters</h2>
+            <p>Het programma van FDND bestaat uit 4 semesters. Semester 1, 2 en 3 bestaan ieder uit 6 sprints. Ieder
+                sprint heeft een eigen thema, waarin bijpassende opdrachten/leertaken worden aangeboden. Het 4e
+                semester
+                bestaat uit een einproject en vrije invulling.
+            </p>
+        </section>
+
+        <nav>
+            <div class="nav__bar">
+                <div class="nav__divider"></div>
+                <div class="nav__semester"><span>Semester 1</span></div>
+                <div class="nav__divider"></div>
+                <a href="#sprint1" class="cta__nav">sprint 1</a>
+                <a href="#sprint2" class="cta__nav">sprint 2</a>
+                <a href="#sprint3" class="cta__nav">sprint 3</a>
+                <a href="#sprint4" class="cta__nav">sprint 4</a>
+                <a href="#sprint5" class="cta__nav">sprint 5</a>
+                <a href="#sprint6" class="cta__nav">sprint 6</a>
+                <div class="nav__divider"></div>
+                <div class="nav__semester"><span>Semester 2</span></div>
+                <div class="nav__divider"></div>
+                <a href="#sprint7" class="cta__nav">sprint 7</a>
+                <a href="#sprint8" class="cta__nav">sprint 8</a>
+                <a href="#sprint9" class="cta__nav">sprint 9</a>
+                <a href="#sprint10" class="cta__nav">sprint 10</a>
+                <a href="#sprint11" class="cta__nav">sprint 11</a>
+                <a href="#sprint12" class="cta__nav">sprint 12</a>
+                <div class="nav__divider"></div>
+                <div class="nav__semester"><span>Semester 3</span></div>
+                <div class="nav__divider"></div>
+                <a href="#sprint13" class="cta__nav">sprint 13</a>
+                <a href="#sprint14" class="cta__nav">sprint 14</a>
+                <a href="#sprint15" class="cta__nav">sprint 15</a>
+                <div class="nav__divider"></div>
+                <div class="nav__semester"><span>Semester 4</span></div>
+                <div class="nav__divider"></div>
+                <a href="#sprint16" class="cta__nav">sprint 16</a>
+                <a href="#sprint17" class="cta__nav">sprint 17</a>
+                <a href="#sprint18" class="cta__nav">sprint 18</a>
             </div>
-            <nav>
-                <div class="nav__bar">
-                    <div class="nav__divider"></div>
-                    <div class="nav__semester"><span>Semester 1</span></div>
-                    <div class="nav__divider"></div>
-                    <a href="#sprint1" class="cta__nav">sprint 1</a>
-                    <a href="#sprint2" class="cta__nav">sprint 2</a>
-                    <a href="#sprint3" class="cta__nav">sprint 3</a>
-                    <a href="#sprint4" class="cta__nav">sprint 4</a>
-                    <a href="#sprint5" class="cta__nav">sprint 5</a>
-                    <a href="#sprint6" class="cta__nav">sprint 6</a>
-                    <div class="nav__divider"></div>
-                    <div class="nav__semester"><span>Semester 2</span></div>
-                    <div class="nav__divider"></div>
-                    <a href="#sprint7" class="cta__nav">sprint 7</a>
-                    <a href="#sprint8" class="cta__nav">sprint 8</a>
-                    <a href="#sprint9" class="cta__nav">sprint 9</a>
-                    <a href="#sprint10" class="cta__nav">sprint 10</a>
-                    <a href="#sprint11" class="cta__nav">sprint 11</a>
-                    <a href="#sprint12" class="cta__nav">sprint 12</a>
-                    <div class="nav__divider"></div>
-                    <div class="nav__semester"><span>Semester 3</span></div>
-                    <div class="nav__divider"></div>
-                    <a href="#sprint13" class="cta__nav">sprint 13</a>
-                    <a href="#sprint14" class="cta__nav">sprint 14</a>
-                    <a href="#sprint15" class="cta__nav">sprint 15</a>
-                    <div class="nav__divider"></div>
-                    <div class="nav__semester"><span>Semester 4</span></div>
-                    <div class="nav__divider"></div>
-                    <a href="#sprint16" class="cta__nav">sprint 16</a>
-                    <a href="#sprint17" class="cta__nav">sprint 17</a>
-                    <a href="#sprint18" class="cta__nav">sprint 18</a>
-                </div>
-            </nav>
-            <section class="semester">
-                <h3 class="semester-title">Semester 1: The Static Web</h3>
-                <div class="flex-container">
-                    <div class="semester__text">
-                        <p class="date">29-08-2021</p>
-                        <p class="semester-text">
-                            Semester 1 heet het statische web. In dit semester leer je hoe je een responsive website
-                            maakt voor een opdrachtgever, je gaat leren hoe je toegankelijke websites kunt maken en hoe
-                            je dit goed kan testen. In verschillende opdrachten leer je over interface design,
-                            interactie en informatie architectuur, én hoe je dit maakt met HTML, CSS en JavaScript
-                        </p>
-                        <button class="cta">Meer informatie</button>
+        </nav>
+        <section class="sprints-semesters">
+            <section id="sprint1" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">1</div>
                     </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">Your Tribe</p>
+                    <button class="cta">Info</button>
+                </div>
 
-                    <div class="semester__image">
-                        <img src="assets/vaporwave.png">
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
                     </div>
-                </div>
-                <figure></figure>
-                </div>
-            </section>
-            <section class="semester">
-                <h3 class="semester-title">Semester 2: Data-driven Web</h3>
-                <div class="flex-container">
-                    <div class="semester__text">
-                        <p class="date">29-08-2021</p>
-                        <p class="semester-text">
-                            Dit semester heet het data-driven web. Vorig semester leerde je hoe je statische
-                            toegankelijke websites kon maken. Veel webapplicaties maken gebruik van een onderliggende
-                            informatiestructuur. In dit semester leer je hoe je met behulp van API’s en databases
-                            gebruiksvriendelijke interactieve toepassingen voor het web kunt ontwerpen en ontwikkelen.
-                        </p>
-                        <button class="cta">Meer informatie</button>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
                     </div>
-
-                    <div class="semester__image">
-                        <img src="assets/vaporwave.png">
-                    </div>
-                </div>
-                <figure></figure>
-            </section>
-            <section class="semester">
-                <h3 class="semester-title">Semester 3: Tooling & Frameworks</h3>
-                <div class="flex-container">
-                    <div class="semester__text">
-                        <p class="date">29-08-2021</p>
-                        <p class="semester-text">
-                            De student werkt volgens gangbare ontwikkelmethoden, en gebruikt frameworks, templates en
-                            build
-                            tools voor het ontwerpen en ontwikkelen van complexe gebruiksvriendelijke interactieve
-                            toepassingen
-                            voor het web.
-                        </p>
-                        <button class="cta">Meer informatie</button>
-                    </div>
-
-                    <div class="semester__image">
-                        <img src="assets/vaporwave.png">
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
                     </div>
                 </div>
             </section>
-            <section class="semester">
-                <h3 class="semester-title">Semester 4: Meesterproef</h3>
-                <div class="flex-container">
-                    <div class="semester__text">
-                        <p class="date">29-08-2021</p>
-                        <h4>Vrije ruimte</h4>
-                        <p class="semester-text">
-                            In blok 7 is 15 EC aan vrije ruimte die de student kan inzetten voor verbreding of
-                            verdieping van de professionele ontwikkeling.
-                        </p>
-                        <h4>Vrije ruimte</h4>
-                        <p class="semester-text">
-                            In blok 7 is 15 EC aan vrije ruimte die de student kan inzetten voor verbreding of
-                            verdieping van de professionele ontwikkeling.
-                        </p>
-                        <button class="cta">Meer informatie</button>
+
+            <section id="sprint2" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">2</div>
                     </div>
-                    <div class="semester__image">
-                        <img src="assets/vaporwave.png">
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">The Client</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint3" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">3</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">All Human</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint4" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">4</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">The Campaign</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint5" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">5</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">Fix the Flow</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint6" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">6</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">The Startup</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint7" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">7</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">Connect Your Tribe</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint8" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">8</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">Keep Users in Control</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint9" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">9</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">The Web is for Everyone</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint10" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">10</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">Content First</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint11" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">11</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">Connecting People</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint12" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">12</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">Proof of Concept</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint13" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">2</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">The Client</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint14" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">2</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">The Client</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint15" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">2</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">The Client</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint16" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">2</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">The Client</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint17" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">2</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">The Client</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+	v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+	h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="sprint18" class="sprint">
+                <div class="sprint-image">
+                    <div class="sprint-title">
+                        <h2>Sprint</h2>
+                        <div class="sprint-number">2</div>
+                    </div>
+                </div>
+                <div class="sprint-components">
+                    <p class="sprint-name">The Client</p>
+                    <button class="cta">Info</button>
+                </div>
+
+                <div class="sprint-components-bottom">
+                    <div class="heart-container">
+                        <svg class="heart" viewBox="0 0 32 29.6">
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2
+                          c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z" />
+                        </svg>
+                    </div>
+                    <div class="hashtag-container">
+                        <svg class="hashtag" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490"
+                            style="enable-background:new 0 0 490 490;" xml:space="preserve">
+                            <path d="M64.333,490h58.401l33.878-137.69h122.259L245.39,490h58.401l33.878-137.69h119.92v-48.162h-108.24l29.2-117.324h79.04
+    v-48.162H390.23L424.108,0H365.31l-33.878,138.661H208.79L242.668,0h-58.415l-33.864,138.661H32.411v48.162h106.298l-28.818,117.324
+    h-77.48v48.162h65.8L64.333,490z M197.11,186.824h122.642l-29.2,117.324H168.292L197.11,186.824z" />
+                        </svg>
+                    </div>
+                    <div class="arrow-container">
+                        <div class="arrow"></div>
                     </div>
                 </div>
             </section>
         </section>
+
         <section class="opdrachten-leertaken">
             <h2>Opdrachten & Leertaken</h2>
         </section>
-        <p class="opdrachten-leertaken-text">Samen met de opdrachtgever vertalen we opdrachten naar leertaken. Student
-            kiezen gedurende een sprint aan
-            welke taken zijn gaan werken: Bekijk het overzicht van leertaken</p>
-        <button class="cta">Meer informatie</button>
+        <section class="opdrachten-leertaken-text">
+            <p>Samen met de opdrachtgever vertalen we opdrachten naar leertaken.
+                Student
+                kiezen gedurende een sprint aan
+                welke taken zijn gaan werken: Bekijk het overzicht van leertaken</p>
+        </section>
     </main>
 </body>
 
