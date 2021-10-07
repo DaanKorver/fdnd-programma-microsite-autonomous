@@ -572,7 +572,7 @@ main > .opdrachten-leertaken > h2::after {
   }
 }
 
-@media (min-width: 70em) {
+@media (min-width: 85em) {
   .home,
   main > .opdrachten-leertaken {
     margin: 2em 4em;
