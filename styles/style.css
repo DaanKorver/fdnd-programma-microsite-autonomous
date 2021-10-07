@@ -147,12 +147,6 @@ button {
   font-size: 1.5rem;
 }
 
-button:hover {
-  background-color: transparent;
-  border: 2px solid var(--lavender);
-  color: var(--lavender);
-}
-
 .sprint-number {
   font-size: 1.5rem;
   border-radius: 6em;
@@ -171,6 +165,7 @@ button:hover {
   align-items: center;
   text-align: center;
   padding: 0.3em 0.5em;
+  white-space: nowrap;
 }
 
 /* HOME / HERO SECTION */
@@ -444,6 +439,22 @@ main > .sprints-semesters {
   border-radius: var(--rounded);
 }
 
+.arrow-container:hover {
+  background-color: transparent;
+  border: 2px solid var(--lavender);
+  color: var(--lavender);
+  cursor: pointer;
+}
+
+.arrow-container:hover > .arrow {
+  background-color: var(--lavender);
+}
+
+.arrow-container:hover > .arrow::after {
+  border-right: 3px solid var(--lavender);
+  border-bottom: 3px solid var(--lavender);
+}
+
 .arrow-container > .arrow {
   position: relative;
   width: 85%;
@@ -578,7 +589,8 @@ main > .opdrachten-leertaken > h2::after {
   main > .sprints-semesters {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 0 4rem;
+    margin: 0 auto;
+    max-width: 85rem;
   }
 
   .opdrachten-leertaken-text {
