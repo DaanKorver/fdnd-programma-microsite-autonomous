@@ -564,6 +564,7 @@ footer nav p {
 footer nav div {
   align-self: flex-start;
   display: flex;
+  flex-direction: column;
 }
 
 footer nav div > ul {
@@ -689,9 +690,10 @@ footer p {
     max-width: 30rem;
   }
 
-  footer nav > ul {
+  footer nav div {
     display: flex;
     align-items: flex-start;
+    flex-direction: row;
   }
 
   footer nav ul {
