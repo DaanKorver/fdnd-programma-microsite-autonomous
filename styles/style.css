@@ -179,7 +179,7 @@ button {
   border-radius: var(--pilled);
 }
 
-.home span {
+.home .fdnd__logo {
   position: absolute;
   padding: 0 1rem calc(1rem + var(--shadow)) var(--shadow);
   top: 0;
@@ -190,7 +190,7 @@ button {
   border-bottom-right-radius: var(--pilled);
 }
 
-.home span div {
+.home .fdnd__logo span {
   display: block;
   padding: 0.5rem 1.2rem;
   border: 1px solid var(--turquoise);
@@ -561,9 +561,13 @@ footer nav p {
   font-size: 1rem;
 }
 
-footer nav ul {
-  list-style: none;
+footer nav div {
   align-self: flex-start;
+  display: flex;
+}
+
+footer nav div > ul {
+  list-style: none;
 }
 
 footer nav ul h3 {
