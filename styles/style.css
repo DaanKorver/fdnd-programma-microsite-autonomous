@@ -58,11 +58,15 @@ nav p {
   font-size: 2rem;
 }
 
-nav .nav__bar{
+nav .nav__bar {
   display: flex;
   overflow: auto;
   padding: 1em 0;
   align-items: center;
+}
+
+nav .nav__bar:hover {
+  cursor: move;
 }
 
 nav .nav__bar::-webkit-scrollbar {
