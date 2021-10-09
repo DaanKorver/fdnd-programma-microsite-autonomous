@@ -7,8 +7,9 @@ const title = document.getElementById("title")
 const description = document.getElementById("description")
 const links = document.querySelectorAll("#links > li > a")
 
-console.log(pageContent);
+if(!pageContent) window.location = "index.html"
 
+document.title = `Sprint ${pageContent.sprint} - ${pageContent.naam}`
 
 title.innerText = pageContent.titel
 description.innerText = pageContent.beschrijving
