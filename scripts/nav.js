@@ -1,4 +1,3 @@
-const ctas = document.querySelectorAll(".cta")
 const navbar = document.querySelector(".nav__bar")
 let mouseDown = false
 let startX, scrollLeft
