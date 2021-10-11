@@ -112,6 +112,7 @@ nav .nav__bar::-webkit-scrollbar {
   padding: 0.5em 2em;
   margin-right: 0.5rem;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 /* Logo */
@@ -272,8 +273,9 @@ button {
 /* SEMESTERS & Sprints */
 
 main > .sprints-semesters-text-container {
-  margin: 3em 0;
-  padding: 0 1em;
+  margin: 0 auto;
+  max-width: 85rem;
+  padding: 2em 1em;
 }
 
 main > .sprints-semesters-text-container > h2 {
@@ -667,9 +669,6 @@ footer p {
 }
 
 @media (min-width: 50em) {
-  main > .sprints-semesters-text-container {
-    margin: 6em 2rem;
-  }
 
   .sprint-name {
     font-size: 1.3rem;
@@ -714,10 +713,6 @@ footer p {
   .home,
   main > .opdrachten-leertaken {
     margin: 2em 4em;
-  }
-
-  main > .sprints-semesters-text-container {
-    margin: 6em 4rem;
   }
 
   .sprint-name {

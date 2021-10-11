@@ -44,6 +44,24 @@ body {
 }
 
 header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.logo {
+  width: 200px;
+  height: 150px;
+  margin: 0 1.8em;
+}
+
+.fdnd {
+  border-left: 1px solid var(--white);
+  padding-left: 1em;
+}
+
+header {
   height: 6vh;
   display: flex;
   margin: 1em 2em;
@@ -224,6 +242,7 @@ nav .nav__bar::-webkit-scrollbar {
   padding: 0.5em 2em;
   margin-right: 0.5rem;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 footer {
