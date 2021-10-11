@@ -298,7 +298,7 @@ main > .sprints-semesters {
 
 .sprint:nth-child(odd) .sprint-image {
   background-blend-mode: saturation;
-  background: linear-gradient(var(--lavender), var(--turquoise));
+  /* background: linear-gradient(var(--lavender), var(--turquoise)); */
 }
 
 .sprint-image {
@@ -490,7 +490,7 @@ main > .opdrachten-leertaken > .opdrachten-leertaken-image {
   padding: 2rem;
   background-color: var(--turquoise);
   border-radius: var(--rounded);
-  background-image: url("../assets/hackaton-image.jpeg");
+  background-image: url("../assets/kickoff-3.JPG");
   background-size: cover;
   background-position: center;
 }

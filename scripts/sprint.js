@@ -8,6 +8,7 @@ const description = document.getElementById("description")
 const links = document.querySelectorAll("#links > li > a")
 const currentSprintEl = document.querySelector(".current-sprint")
 const nextSprintEl = document.querySelector(".next-sprint")
+const sprintImage = document.querySelector(".sprint-image")
 
 if(!pageContent) window.location = "index.html"
 
@@ -22,6 +23,7 @@ if(sprints[sprintNummer + 1]) {
 
 title.innerText = pageContent.titel
 description.innerText = pageContent.beschrijving
+sprintImage.style.backgroundImage = `url('${pageContent.foto}')`
 
 for (let i = 0; i < links.length; i++) {
     links[i].href = pageContent.opdrachten[i].live
