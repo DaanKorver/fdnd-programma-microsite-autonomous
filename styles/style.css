@@ -138,7 +138,6 @@ header {
 
 button {
   all: unset;
-  cursor: pointer;
   border: 2px solid var(--lavender);
   border-radius: 2em;
   background-color: var(--lavender);
@@ -146,6 +145,12 @@ button {
   font-weight: 500;
   padding: 0.3em 1.5em;
   font-size: 1.5rem;
+  transition: .3s transform;
+  transform-origin: bottom left;
+}
+
+button:hover {
+  transform: rotate(9deg);
 }
 
 .sprint-number {
@@ -404,6 +409,19 @@ main > .sprints-semesters {
   fill: var(--blueberry);
   width: 4.2em;
   padding: 0.8em;
+}
+
+.heart:hover {
+  animation: heartBeat 1s infinite;
+}
+
+@keyframes heartBeat {
+  0% {
+    transform: scale(1)
+  }
+  50% {
+    transform: scale(1.2)
+  }
 }
 
 .sprint-components-bottom > .hashtag-container {
