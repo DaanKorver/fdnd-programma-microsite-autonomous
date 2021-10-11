@@ -7,7 +7,7 @@ const sprintsContainer = document.querySelector(".sprints-semesters")
 sprints.forEach(sprint=>{
   sprintsContainer.innerHTML += 
 `
-<section id="sprint1" class="sprint">
+<section id="sprint${sprint.sprint}" class="sprint">
 <div class="sprint-image" style="background-image: url('${sprint.foto}')">
     <div class="sprint-title">
         <h2>Sprint</h2>
