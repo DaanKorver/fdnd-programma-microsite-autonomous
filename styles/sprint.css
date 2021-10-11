@@ -120,6 +120,11 @@ h1 {
   font-size: 2em;
 }
 
+.datum {
+  font-style: italic;
+  color: var(--turquoise);
+}
+
 .information > * {
   margin-bottom: 1em;
 }

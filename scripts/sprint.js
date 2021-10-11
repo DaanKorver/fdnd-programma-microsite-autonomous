@@ -9,6 +9,7 @@ const links = document.querySelectorAll("#links > li > a")
 const currentSprintEl = document.querySelector(".current-sprint")
 const nextSprintEl = document.querySelector(".next-sprint")
 const sprintImage = document.querySelector(".sprint-image")
+const sprintDatum = document.querySelector(".datum")
 
 if(!pageContent) window.location = "index.html"
 
@@ -22,6 +23,7 @@ if(sprints[sprintNummer + 1]) {
 } else nextSprintEl.style.display = "none"
 
 title.innerText = pageContent.titel
+sprintDatum.innerText = pageContent.datum
 description.innerText = pageContent.beschrijving
 sprintImage.style.backgroundImage = `url('${pageContent.foto}')`
 
