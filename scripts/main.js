@@ -11,6 +11,10 @@ avifSupport().then(()=>{
     fixImages()
 })
 
+/**
+ * Renders the sprints out of the JSON file on the page 
+ * @param {string} support for .avif image files?
+ */
 function renderSprints(support) {
     sprints.forEach(sprint=>{
         sprintsContainer.innerHTML += 
@@ -55,6 +59,9 @@ function renderSprints(support) {
       })
 }
 
+/**
+ * Sets images to supported types if .avif is not supported
+ */
 function fixImages() {
     document.querySelector(".home").style.backgroundImage = `url('../assets/hero-image.jpeg')`
     document.querySelector(".opdrachten-leertaken-image").style.backgroundImage = `url('../assets/kickoff-3.JPG')`

@@ -1,3 +1,7 @@
+/**
+ * Checks if there is support for .avif image files
+ * @returns a Promise. On success promise will be resolved avifSupport true
+ */
 export default async function avifSupport() {
   return new Promise((resolve, reject)=>{
       const img = new Image()

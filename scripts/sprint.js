@@ -33,9 +33,6 @@ avifSupport().then(()=>{
     sprintImage.style.backgroundImage = `url('${pageContent.foto.split(".avif").shift() + ".jpg"}')`
 })
 
-
-
-
 for (let i = 0; i < links.length; i++) {
     links[i].href = pageContent.opdrachten[i].live
 }
