@@ -157,7 +157,7 @@ h1 {
 .sprint-image {
   width: 85%;
   height: 65vh;
-  background-image: url("./../assets/hero-image.jpeg");
+  background-image: url("./../assets/hero-image.avif");
   background-size: cover;
   background-position: center;
   margin-left: auto;
