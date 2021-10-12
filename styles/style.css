@@ -573,7 +573,8 @@ main > .opdrachten-leertaken > .opdrachten-leertaken-image {
   font-size: 1rem;
 }
 
-.opdrachten-leertaken-text a {
+.opdrachten-leertaken-text a,
+.opdrachten-leertaken-text a:visited {
   color: var(--white);
 }
 
