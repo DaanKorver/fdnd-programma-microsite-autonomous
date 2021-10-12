@@ -1,4 +1,4 @@
-async function avifSupport() {
+export default async function avifSupport() {
   return new Promise((resolve, reject)=>{
       const img = new Image()
       let avifSupport = true
