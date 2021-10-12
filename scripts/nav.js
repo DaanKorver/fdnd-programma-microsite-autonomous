@@ -2,14 +2,22 @@ const navbar = document.querySelector(".nav__bar")
 let mouseDown = false
 let startX, scrollLeft
 
+/**
+ * Calculates dragging distance
+ * @param {object} e is event 
+ */
 let startDragging = function (e) {
   mouseDown = true;
   startX = e.pageX - navbar.offsetLeft;
   scrollLeft = navbar.scrollLeft;
-};
-let stopDragging = function (event) {
+}
+
+/**
+ * Sets mousedown to false aka
+ */
+let stopDragging = function () {
   mouseDown = false;
-};
+}
 
 navbar.addEventListener('mousemove', (e) => {
   e.preventDefault();

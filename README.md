@@ -56,6 +56,11 @@ Vervolgens na het clonen, openen met live server.
 
 ## 🔋 Gebruik
 n.v.t
+
+## 📚 Wiki
+
+Link naar de [Wiki](https://github.com/DaanKorver/fdnd-programma-microsite-autonomous/wiki)
+
 ## 📙 Bronnen
 - [🩳 Styleguide](https://styleguide.fdnd.nl/)
 - [🔤 Font](https://fonts.google.com/specimen/Open+Sans)
