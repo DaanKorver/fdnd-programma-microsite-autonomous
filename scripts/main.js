@@ -1,4 +1,5 @@
 import sprints from "./sprints.js";
+import avifSupport from "./avifSupport.js";
 
 const sprintsContainer = document.querySelector(".sprints-semesters")
 
