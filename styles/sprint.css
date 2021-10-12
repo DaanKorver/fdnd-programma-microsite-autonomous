@@ -53,13 +53,6 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-header {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 1em;
-}
-
 .logo {
   width: 200px;
   height: 150px;
@@ -72,7 +65,7 @@ header {
 }
 
 header {
-  height: 6vh;
+  height: 3.5rem;
   display: flex;
   margin: 1em 2em;
 }
@@ -279,7 +272,6 @@ footer nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  gap: 20px;
 }
 
 footer nav p {
@@ -291,6 +283,7 @@ footer nav div {
   align-self: flex-start;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
 
 footer nav div > ul {
