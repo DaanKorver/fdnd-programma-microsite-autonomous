@@ -11,6 +11,8 @@ const currentSprintEl = document.querySelector(".current-sprint")
 const nextSprintEl = document.querySelector(".next-sprint")
 const sprintImage = document.querySelector(".sprint-image")
 const sprintDatum = document.querySelector(".datum")
+const navbar = document.querySelector(".nav__bar")
+const activeSprint = document.querySelectorAll(".cta__nav")[sprintNummer]
 
 if(!pageContent) window.location = "index.html"
 
@@ -36,3 +38,5 @@ avifSupport().then(()=>{
 for (let i = 0; i < links.length; i++) {
     links[i].href = pageContent.opdrachten[i].live
 }
+
+navbar.scrollLeft = activeSprint.offsetLeft
