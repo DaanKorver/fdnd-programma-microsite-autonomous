@@ -30,6 +30,8 @@ FDND wilt een overzichtelijke programma website om verwarring te voorkomen. Hier
 - 💻 Visual Studio Code
 - 🤳 Photoshop
 - 🖌️ Figma
+- 🐼 TinyPNG
+- 🪄 Squoosh
 - ✍️ Pen & Papier
 
 **Code Skills:**
