@@ -66,6 +66,8 @@ Link naar de [Wiki](https://github.com/DaanKorver/fdnd-programma-microsite-auton
 ## 📙 Bronnen
 - [🩳 Styleguide](https://styleguide.fdnd.nl/)
 - [🔤 Font](https://fonts.google.com/specimen/Open+Sans)
+- [💦 Unsplash](https://unsplash.com/)
+- [🅿️ Pexels](https://www.pexels.com/)
 
 ## 💳 Licentie
 
