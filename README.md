@@ -31,7 +31,7 @@ FDND wilt een overzichtelijke programma website om verwarring te voorkomen. Hier
 - 🤳 Photoshop
 - 🖌️ Figma
 - 🐼 TinyPNG
-- 🪄 Squoosh
+- 💽 Squoosh
 - ✍️ Pen & Papier
 
 **Code Skills:**
