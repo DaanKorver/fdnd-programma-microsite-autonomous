@@ -27,7 +27,7 @@ function renderSprints(support) {
           </div>
       </div>
       <div class="sprint-components">
-          <button class="cta">learn</button>
+          <div class="cta">learn</div>
           <p class="sprint-name">${sprint.naam}</p>
       </div>
       

@@ -146,7 +146,8 @@ header {
 
 /* COMPONENTS */
 
-button {
+.cta {
+  pointer-events: none;
   all: unset;
   border: 2px solid var(--lavender);
   border-radius: 2em;
@@ -159,7 +160,7 @@ button {
   transform-origin: bottom left;
 }
 
-button:hover {
+.cta:hover {
   transform: rotate(9deg);
 }
 
